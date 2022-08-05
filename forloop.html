@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+      //================pattern1====================
+     /* for(let i=0;i<5;i++)
+      {
+          console.log("* * * * *");
+        }
+
+//==================Progarm2===================
+   for(let i=1; i<6; i++)
+   {
+    console.log(i,i,i,i,i);
+    } 
+    
+    
+ //===============Program3===================
+
+    for(let i=1,j=1; i<6; i++)
+{
+  console.log(j,j+1,j+2,j+3,j+4);
+}
+
+//======================Program4==============
+for(let i=0; i<5; i++)
+{
+  let x=String.fromCharCode(i+65);
+  console.log(x,x,x,x,x);
+}
+
+//=====================Program5======================
+
+for(let i=0; i<5; i++)
+{
+ console.log("A","B","C","D","E","F");
+}
+
+
+//=======================Program7=================
+console.log(5 ,5 ,5  ,5 ,5)
+for(let i=0,j=5; i<5; i++)
+{
+ 
+ console.log(j,j-1,j-2,j-3,j-4);
+}
+//========================Program8===============
+for(let i=0; i<5; i++)
+{
+let x= String.fromCharCode(69-i);
+ console.log(x,x,x,x,x);
+}
+//======================Program8=================
+for(let i=0; i<5; i++)
+{
+let x= String.fromCharCode(69," ", 68," ",67," ",66," ",65);
+ console.log(x);
+}
+//============================Progarm9===============
+for(let i=0;i<5;i++)
+{
+  for(let j=0;j<=i;j++)
+  {
+    process.stdout.write(" *");
+    
+  } console.log();
+}
+//===========================Program11===============
+for(let i=1;i<6;i++)
+{
+  for(let j=1;j<=i;j++)
+  {
+    process.stdout.write(i+" ");
+    
+  } console.log();
+}
+//===========================Program12=================
+for(let i=1;i<6;i++)
+{
+  for(let j=1;j<=i;j++)
+  {
+    process.stdout.write(j+" ");
+    
+  } console.log();
+}
+//==============================Program13==============
+for(let i=1;i<6;i++)
+{
+  for(let j=1;j<=i;j++)
+  {
+   let x= String.fromCharCode(64+i)
+    process.stdout.write(x+" ");
+    
+  } console.log();
+}
+
+//=============================Program14==============
+for(let i=1;i<6;i++)
+{
+  for(let j=1;j<=i;j++)
+  {
+   let x= String.fromCharCode(64+j)
+    process.stdout.write(x+" ");
+    
+  } console.log();
+}
+//=========================Program15====================
+for(let i=1;i<6;i++)
+{
+  for(let j=5;j>=i;j--)
+  {
+   
+    process.stdout.write(" *"+"");
+    
+  } console.log();
+}
+//========================Progarm19==================
+for(let i=1;i<6;i++)
+{
+  for(let j=i;j<=5;j++)
+  {
+   let x= String.fromCharCode(64+j);
+   
+    process.stdout.write(x +"");
+    
+  } console.log();
+}
+//==================Program20==================
+for(let i=1;i<6;i++)
+{
+  for(let j=i;j<=5;j++)
+  {
+   
+    process.stdout.write(i+4 +" ");
+    
+  } console.log();
+}
+//=====================Program21=================
+for(let i=1;i<6;i++)
+{
+  for(let j=5;j>=i;j--)
+  {
+   
+    process.stdout.write(j +" ");
+    
+  } console.log();
+}
+//===============================Program22===========
+for(let i=1;i<6;i++)
+{
+  for(let j=5;j>=i;j--)
+  {
+  let x= String.fromCharCode(70-i);
+    process.stdout.write(x +" ");
+    
+  } console.log();
+}
+//==============================Program23============
+for(let i=1;i<6;i++)
+{
+  for(let j=5;j>=i;j--)
+  {
+  let x= String.fromCharCode(64+j);
+    process.stdout.write(x +" ");
+    
+  } console.log();
+}
+//=====================Program24============
+for(let i=0;i<5;i++)
+{
+  for(let j=i;j<4;j++)
+  {
+    process.stdout.write(" ");
+  }
+  for(let k=0;k<=i;k++)
+  {
+    process.stdout.write("*");
+  }
+  console.log();
+}
+//==============Optimization code=============
+for(let i=0;i<5;i++)
+ {
+   for(let j=0;j<5;j++)
+   {
+     if(j<(4-i))
+     {
+       process.stdout.write("  ");
+     }
+     else
+     {
+       process.stdout.write("* ");
+     }
+     
+   }console.log();
+ }
+// ===================Program25=================
+for(let i=0;i<5;i++)
+{
+  for(let j=i;j<4;j++)
+  {
+    process.stdout.write(" ");
+  }
+  for(let k=0;k<=i;k++)
+  {
+    process.stdout.write(i+1+"");
+  }
+  console.log();
+}
+//==================Program26=============
+for(let i=0;i<5;i++)
+{
+  for(let j=1;j<=4-i;j++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<=i;k++)
+  {
+    
+    process.stdout.write(k+1+" ");
+  }
+  console.log();
+}
+//==========================Program27===============
+for(let i=0;i<5;i++)
+{
+  for(let j=1;j<=4-i;j++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<=i;k++)
+  {
+   let x= String.fromCharCode(65+i);
+    
+    process.stdout.write(x+" ");
+  }
+  console.log();
+}
+//===============================Program28============
+for(let i=0;i<5;i++)
+{
+  for(let j=1;j<=4-i;j++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<=i;k++)
+  {
+   let x= String.fromCharCode(65+k);
+    
+    process.stdout.write(x+" ");
+  }
+  console.log();
+}
+//==========================Program29================
+for(let i=0;i<5;i++)
+{
+  for(let k=1;k<=i;k++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let j=0;j<5-i;j++)
+  {
+    process.stdout.write("*"+" ");
+  }
+  console.log();
+  
+}
+//========================Program30===============
+for(let i=0;i<5;i++)
+{
+  for(let k=1;k<=i;k++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let j=0;j<5-i;j++)
+  {
+    process.stdout.write(5-i+" ");
+  }
+  console.log();
+  
+}
+//============================Program31================
+for(let i=0;i<5;i++)
+{
+  for(let k=1;k<=i;k++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let j=0;j<5-i;j++)
+  {
+    process.stdout.write(j+1+" ");
+  }
+  console.log();
+  
+}
+//==========================Program32==================
+for(let i=0;i<5;i++)
+{
+  for(let k=1;k<=i;k++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let j=0;j<5-i;j++)
+  {
+   let x= String.fromCharCode(69-i)
+    process.stdout.write(x+" ");
+  }
+  console.log();
+  
+}
+//==============================Program33==============
+for(let i=0;i<5;i++)
+{
+  for(let k=1;k<=i;k++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let j=0;j<5-i;j++)
+  {
+   let x= String.fromCharCode(65+j);
+    process.stdout.write(x+" ");
+  }
+  console.log();
+  
+}
+//============================Program34======================
+for(let i=0;i<5;i++)
+{
+  for(let j=i;j<4;j++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<=3*i-i;k++)
+  {
+    process.stdout.write("*"+" ");
+  }
+  console.log();
+}*/
+//=============================Program35===============
+
+for(let i=0;i<5;i++)
+{
+  for(let j=i;j<4;j++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<=2*i;k++)
+  {
+    process.stdout.write(i+1+" ");
+  }
+  console.log();
+}
+//============================Program36==================
+for(let i=0;i<5;i++)
+{
+  for(let j=i;j<4;j++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<=2*i;k++)
+  {
+    process.stdout.write(2*i+1+" ");
+  }
+  console.log();
+}
+//==============================Program37=============
+for(let i=0;i<5;i++)
+{
+  for(let j=i;j<4;j++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<=2*i;k++)
+  {
+    let a=String.fromCharCode(i+65);
+    process.stdout.write(a+" ");
+  }
+  console.log();
+}
+//======================================Program38=============
+for(let i=0;i<5;i++)
+{
+  for(let j=i;j<4;j++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<=2*i;k++)
+  {
+    let a=String.fromCharCode(2*i+65);
+    process.stdout.write(a+" ");
+  }
+  console.log();
+}
+//==========================Program39==============
+for(let i=0;i<5;i++)
+{
+  for(let j=i;j<4;j++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<=2*i;k++)
+  {
+   
+    process.stdout.write(k+1+" ");
+  }
+  console.log();
+}
+//==========================Program40=============
+for(let i=0;i<5;i++)
+{
+  for(let j=i;j<4;j++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<=2*i;k++)
+  {
+   
+    process.stdout.write(2*i+1-k+" ");
+  }
+  console.log();
+}
+//======================Program41====================
+for(let i=0;i<5;i++)
+{
+  for(let j=i;j<4;j++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<=2*i;k++)
+  {
+   let a=String.fromCharCode(65+k);
+    process.stdout.write(a+" ");
+  }
+  console.log();
+}
+//==============================Progarm42===================
+for(let i=0;i<5;i++)
+{
+  for(let j=i;j<4;j++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<=2*i;k++)
+  {
+   let a=String.fromCharCode(65+2*i-k);
+    process.stdout.write(a+" ");
+  }
+  console.log();
+}
+//=======================Program43============================
+for(let i=0;i<5;i++)
+{
+  for(let j=i;j<4;j++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<=2*i;k++)
+  {
+    
+   
+    process.stdout.write(Math.abs(i-k)+" ");
+  }
+  console.log();
+}
+//===========================Program44================
+for(let i=0;i<5;i++)
+{
+  for(let j=i;j<4;j++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<=2*i;k++)
+  {
+   let b= Math.abs(i-k);
+   let a= String.fromCharCode(b+65);
+   
+    process.stdout.write(a+" ");
+  }
+  console.log();
+}
+//===================Program45===================
+for(let i=0;i<4;i++)
+{
+  for(let j=i;j<3;j++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<=i;k++)
+  {
+    process.stdout.write(k+1+" ");
+  }
+   for(let l=i;l>=1;l--)
+   {
+    process.stdout.write(l+" ");
+   }
+   console.log();
+}
+
+
+
+
+//=========================Program46==============
+for(let i=0;i<4;i++)
+{
+  for(let j=i;j<3;j++)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<=i;k++)
+  {
+   let x= String.fromCharCode(k+65+" ");
+    process.stdout.write(x+" ");
+  }
+   for(let l=i;l>=1;l--)
+   {
+     let y=String.fromCharCode(l+64+" ");
+    process.stdout.write(y+" ");
+   }
+   console.log();
+}
+//=================Program47===================
+for(let i=3;i>=0;i--)
+{
+  for(let j=3;j>i;j--)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<2*i+1;k++)
+  {
+    process.stdout.write("* ");
+  }
+  console.log();
+}
+//=========================Progarm49=========
+for(let i=3;i>=0;i--)
+{
+  for(let j=3;j>i;j--)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<2*i+1;k++)
+  {
+    process.stdout.write(2*i+1+" ");
+  }
+  console.log();
+}
+//=======================Program50===========
+for(let i=3;i>=0;i--)
+{
+  for(let j=3;j>i;j--)
+  {
+    process.stdout.write("  ");
+  }
+  for(let k=0;k<2*i+1;k++)
+  {
+    process.stdout.write(k+1+" ");
+  }
+  console.log();
+}
+//=====================Program51===========
+for(let i=0;i<4;i++)
+{
+  for(let j=0;j<=6-i;j++)
+  {
+    if(j<i)
+    {
+      process.stdout.write("  ");
+    }
+    else
+    {
+      let x=String.fromCharCode(68-i);
+      process.stdout.write(x+" ");
+    }
+  }console.log();
+}
+//======================Program52================
+for(let i=0;i<4;i++)
+{
+  for(let j=0;j<=6-i;j++)
+  {
+    if(j<i)
+    {
+      process.stdout.write("  ");
+    }
+    else
+    {
+      let x=String.fromCharCode(71-2*i);
+      process.stdout.write(x+" ");
+    }
+  }console.log();
+}
+//=====================Progarm53============
+for(let i=0;i<4;i++)
+{
+  for(let j=0;j<=6-i;j++)
+  {
+    if(j<i)
+    {
+      process.stdout.write("  ");
+    }
+    else
+    {
+      let x=String.fromCharCode(65+j-i);
+      process.stdout.write(x+" ");
+    }
+  }console.log();
+}
+//========================Progarm54===========
+for(let i=0;i<7;i++)
+{
+  for(let j=0;j<4;j++)
+  {
+    if(i<4)
+    {
+    if(j<=i)
+    {
+      process.stdout.write("* ");
+    }}
+    else
+    {
+      if(j<7-i)
+      {
+        process.stdout.write("* ")
+      }
+    }
+    
+   
+ }console.log();
+}
+//===================Progarm55===============
+for(let i=0;i<7;i++)
+{
+  for(let j=0;j<4;j++)
+  {
+    if(i<4)
+    {
+    if(j<=i)
+    {
+      process.stdout.write(3-j +" ");
+    }}
+    else
+    {
+      if(j<7-i)
+      {
+        process.stdout.write(3-j+" ")
+      }
+    }
+    
+   
+ }console.log();
+}
+//================Program56=================
+for(let i=0;i<7;i++)
+{
+  for(let j=0;j<4;j++)
+  {
+    if(i<4)
+    {
+    if(j<=i)
+    {
+      process.stdout.write(3-i+j+" ");
+    }
+    }
+    else
+    {
+      if(j<7-i)
+      {
+        process.stdout.write(i-3+j +" ");
+      }
+      
+    }
+  }console.log();
+}
+//=========================Program57=============
+for(let i=0;i<7;i++)
+{
+  for(let j=0;j<4;j++)
+  {
+    if(i<4)
+    {
+    if(j<=i)
+    {
+      let x=String.fromCharCode(68-i+j);
+      process.stdout.write(x+" ");
+    }
+    }
+    else
+    {
+      if(j<7-i)
+      {
+        let y=String.fromCharCode(62+i+j);
+        process.stdout.write(y +" ");
+      }
+      
+    }
+  }console.log();
+}
+//===========================Progarm58============
+for(let i=0;i<7;i++)
+{
+  for(let j=0;j<4;j++)
+  {
+    if(i<4)
+    {
+    if(j<=i)
+    {
+      let x=String.fromCharCode(68-i+j);
+      process.stdout.write(x+" ");
+    }
+    }
+    else
+    {
+      if(j<7-i)
+      {
+        let y=String.fromCharCode(62+i+j);
+        process.stdout.write(y +" ");
+      }
+      
+    }
+  }console.log();
+}
+//=====================Program 59=====================
+for(let i=0;i<7;i++)
+{
+  for(let j=0;j<4;j++)
+  {
+    if(i<4)
+    {
+      if(j<=2-i)
+      {
+        process.stdout.write("  ");
+      }
+      else
+      {
+        process.stdout.write("* ");
+      }
+      
+    }
+    else
+    { 
+      if(j<i-3)
+      {
+        process.stdout.write("  ");
+      }
+      else
+      {
+        process.stdout.write("* ");
+      }
+      
+    }
+  }console.log();
+}
+//========================Program60===========
+for(let i=0;i<7;i++)
+{
+  for(let j=0;j<4;j++)
+  {
+    if(i<4)
+    {
+      if(j<=2-i)
+      {
+        process.stdout.write("  ");
+      }
+      else
+      {
+        process.stdout.write(6-j-i +" ");
+      }
+      
+    }
+    else
+    { 
+      if(j<i-3)
+      {
+        process.stdout.write("  ");
+      }
+      else
+      {
+        process.stdout.write(i-j+" ");
+      }
+      
+    }
+  }console.log();
+}
+//==================Program61========================
+for(let i=0;i<7;i++)
+{
+  for(let j=0;j<4;j++)
+  {
+    if(i<4)
+    {
+      if(j<=2-i)
+      {
+        process.stdout.write("  ");
+      }
+      else
+      {
+        process.stdout.write(j +" ");
+      }
+      
+    }
+    else
+    { 
+      if(j<i-3)
+      {
+        process.stdout.write("  ");
+      }
+      else
+      {
+        process.stdout.write(j+" ");
+      }
+      
+    }
+  }console.log();
+}
+//==========================Program62===========
+for(let i=0;i<7;i++)
+{
+  for(let j=0;j<4;j++)
+  {
+    if(i<4)
+    {
+      if(j<=2-i)
+      {
+        process.stdout.write("  ");
+      }
+      else
+      {
+       let x= String.fromCharCode(65+j);
+        process.stdout.write(x+" ");
+      }
+      
+    }
+    else
+    { 
+      if(j<i-3)
+      {
+        process.stdout.write("  ");
+      }
+      else
+      {
+        let y=String.fromCharCode(65+j);
+        process.stdout.write(y+" ");
+      }
+      
+    }
+  }console.log();
+}
+//====================Program63=============
+for(let i=0;i<7;i++)
+{
+  for(let j=0;j<4;j++)
+  {
+    if(i<4)
+    {
+      if(j<3-i)
+      {
+        process.stdout.write("  ");
+      }
+      else
+      {
+       let x= String.fromCharCode(71-i-j);
+        process.stdout.write(x+" ");
+      }
+      
+    }
+    else
+    {
+      if(j<i-3)
+      {
+        process.stdout.write("  ");
+      }
+      else
+      {
+         let y= String.fromCharCode(65+i-j);
+        process.stdout.write(y+" ");
+      }
+    }
+  }console.log();
+}
+//=====================Program64=================
+for(let i=0;i<5;i++)
+{
+  for(let j=0;j<5;j++)
+  {
+    if(j<4-i)
+    {
+      process.stdout.write(" ");
+    }
+  
+  else
+  {
+      process.stdout.write("* ");
+  }
+  }console.log();
+}
+//=======================Program65============
+for(let i=0;i<5;i++)
+{
+  for(let j=0;j<5;j++)
+  {
+    if(j<4-i)
+    {
+      process.stdout.write(" ");
+    }
+  
+  else
+  {
+      process.stdout.write( i+1+" ");
+  }
+  }console.log();
+}
+//=================Program67===================
+for(let i=0;i<5;i++)
+{
+  for(let j=0;j<5;j++)
+  {
+    if(j<4-i)
+    {
+      
+      process.stdout.write(" ");
+    }
+  
+  else
+  {
+    let x=String.fromCharCode(65+i);
+      process.stdout.write( x+" ");
+  }
+  }console.log();
+}
+//=============Program68===================
+for(let i=0;i<5;i++)
+{
+  for(let j=0;j<5;j++)
+  {
+    if(j<4-i)
+    {
+      
+      process.stdout.write(" ");
+    }
+  
+  else
+  {
+    let x=String.fromCharCode(61+i+j);
+      process.stdout.write( x+" ");
+  }
+  }console.log();
+}
+//==================Program69=================
+for(let i=0;i<5;i++)
+{
+  for(let j=0;j<5;j++)
+  {
+    if(j<i)
+    {
+      process.stdout.write(" ");
+    }
+    else
+    {
+      process.stdout.write("*"+" ");
+    }
+  }console.log();
+}
+//=================Program70==================
+for(let i=0;i<5;i++)
+{
+  for(let j=0;j<5;j++)
+  {
+    if(j<i)
+    {
+      process.stdout.write(" ");
+    }
+    else
+    {
+      process.stdout.write(5-i+" ");
+    }
+  }console.log();
+}
+//=======================Program73============
+for(let i=0;i<5;i++)
+{
+  for(let j=0;j<5;j++)
+  {
+    if(j<i)
+    {
+      process.stdout.write(" ");
+    }
+    else
+    {
+      let x=String.fromCharCode(69-j);
+      process.stdout.write(x+" ");
+    }
+  }console.log();
+}
+//=================Program74======================
+for(let i=0;i<5;i++)
+{
+  for(let j=0;j<5;j++)
+  {
+    if(j<i)
+    {
+      process.stdout.write(" ");
+    }
+    else
+    {
+      let x=String.fromCharCode(65+j-i);
+      process.stdout.write(x+" ");
+    }
+  }console.log();
+}
+
+  </script>  
+</body>
+</html>
